@@ -1,0 +1,74 @@
+#price {
+  background: $color-bg-1;
+  padding: 3.4375rem 0 4.25rem;
+  @include mq(lg) {
+  }
+}
+
+.price__title {
+  margin-bottom: 4rem;
+  line-height: 1.4375;
+  @include mq(lg) {
+    margin-bottom: 4.1875rem;
+  }
+}
+
+.price__table {
+  width: 90.43%;
+  margin: 0 auto;
+  margin-bottom: 2.25rem;
+  background: $color-bg-2;
+  border: none;
+  box-shadow: 0 3px 6px #00000029;
+  // vertical-align: middle;
+  @include mq(xs) {
+  }
+
+  tr {
+    
+    th {
+      
+      font-weight: bold;
+      @include mq(xs) {
+        display: block;
+        font-size: 0.875rem;
+        padding: 2rem;
+        border-bottom: 1px solid #e5e5e5;
+      }
+      @include mq(md) {
+        display: inline-block;
+        width: 286px;
+        font-size: 1rem;
+        border-right: 1px solid #e5e5e5;
+        padding: 2.125rem 2.125rem 2.125rem 1.1825rem;
+      }
+    }
+    td {
+      font-weight: bold;
+      @include mq(xs) {
+        font-size: 0.75rem;
+        display: block;
+        text-align: center;
+        padding: 2rem;
+      }
+      @include mq(md) {
+        display: inline-block;
+        padding: 2.125rem 0 2.125rem 1.875rem;
+      }
+    }
+  }
+}
+
+.price__table__row:nth-child(1),
+.price__table__row:nth-child(2),
+.price__table__row:nth-child(3) {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.price__text {
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.875rem;
+  @include mq(lg) {
+  }
+}

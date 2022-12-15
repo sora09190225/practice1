@@ -1,0 +1,39 @@
+#footer {
+  background: $color-bg-2;
+  padding: 2.6875rem 0 3.0625rem;
+}
+
+.footer__title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.1666;
+  margin-bottom: 1.3125rem;
+}
+
+.footer__nav {
+  text-align: center;
+  margin-bottom: 3.25rem;
+  @include mq(lg) {
+    display: flex;
+    justify-content: center;
+    gap: 1.5625rem;
+  }
+}
+
+.footer__nav__link {
+  a {
+    display: block;
+    color: $color-font-1;
+    font-weight: bold;
+    line-height: 1.5rem;
+  }
+  &:nth-child(1) {
+    margin-bottom: 0.1rem;
+  }
+}
+
+.footer__copy {
+  text-align: center;
+  font-size: 0.875rem;
+}

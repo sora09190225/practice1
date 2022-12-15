@@ -1,0 +1,73 @@
+main {
+  padding-top: 5.875rem;
+}
+
+#top {
+  background-image: url(/img/楕円形\ 1.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: top -14rem right -9.5rem;
+  @include mq(lg) {
+    background-position: top -7.8125rem right -2.5rem;
+  }
+}
+
+.top__wrapper {
+  @include mq(lg) {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 10.5rem 0;
+  }
+}
+
+.top__image {
+  @include mq(xs) {
+    width: 89.333%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  @include mq(lg) {
+    width: 50.585%;
+    margin: 0 auto;
+  }
+  img {
+    width: 100%;
+  }
+}
+.top__message__box {
+  @include mq(xs) {
+    text-align: center;
+  }
+  @include mq(lg) {
+    text-align: justify;
+  }
+}
+.top__message__title {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.4375;
+  margin-bottom: 2.75rem;
+}
+
+.top__message__text {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 2.8125rem;
+  line-height: 1.5;
+}
+
+.top__link {
+  a {
+    display: inline-block;
+    color: $color-font-2;
+    font-size: 0.875rem;
+    background: linear-gradient(to right, #fa41cc, #6020b0);
+    line-height: 1.428;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px;
+    padding: 7px 36px 10px 35px;
+}
+}

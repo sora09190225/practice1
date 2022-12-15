@@ -1,0 +1,148 @@
+#feature {
+  background-color: $color-bg-2;
+  padding: 8rem 0 9.625rem;
+  @include mq(lg) {
+    padding: 5rem 0 9.625rem;
+  }
+}
+
+.feature_wrapper {
+  max-width: 100%;
+  @include mq(lg) {
+    max-width: 1044px;
+    margin: 0 auto;
+  }
+}
+
+/*===============================================================================================
+# title
+==============================================================================================*/
+.feature__title {
+  margin-bottom: 4rem;
+  line-height: 1.4375;
+  @include mq(lg) {
+    margin-bottom: 4.1875rem;
+  }
+}
+
+.feature__sub__title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: $color-font-1;
+  margin-bottom: 3.375rem;
+  @include mq(md) {
+    font-size: 1.5rem;
+    
+  }
+  @include mq(lg) {
+    font-size: 1.75rem;
+  }
+}
+/*===============================================================================================
+# item
+==============================================================================================*/
+.feature__items {
+  max-width: 96%;
+  margin: 0 auto;
+  @include mq(lg) {
+  }
+}
+
+.feature__item {
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.feature__item-1,
+.feature__item-2 {
+  margin-bottom: 5.375rem;
+}
+
+.feature__item-2 {
+  @include mq(md) {
+    flex-direction: row-reverse;
+  }
+}
+
+/*===============================================================================================
+# image
+==============================================================================================*/
+
+.feature__item__image {
+  width: 80%;
+  margin: 0 auto;
+  @include mq(md) {
+    width: 45%;
+  }
+  @include mq(lg) {
+    width: 36.766%;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.image-1,
+.image-2 {
+  margin-bottom: 2.5rem;
+}
+
+.image-2 {
+  @include mq(md) {
+    margin-left: 6%;
+  }
+  @include mq(lg) {
+    margin-left: 15.111%;
+  
+  }
+}
+
+.image-1,
+.image-3 {
+  @include mq(md) {
+    margin-right: 6%;
+  }
+  @include mq(lg) {
+    margin-right: 15.111%;
+    
+  }
+}
+
+/*===============================================================================================
+# message
+==============================================================================================*/
+
+.feature__item__message {
+}
+
+.feature__item__message-1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2;
+  margin-bottom: 1.5rem;
+  @include mq(md) {
+    font-size: 1rem;
+  }
+  @include mq(lg) {
+    font-size: 1.5rem;
+    margin-bottom: 3.375rem;
+  }
+}
+
+.feature__item__message-2 {
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.625;
+  @include mq(md) {
+    font-size: 0.75rem;
+  }
+  @include mq(lg) {
+    font-size: 1rem;
+  }
+}

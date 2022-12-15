@@ -1,0 +1,128 @@
+#blog {
+  background: $color-bg-1;
+  padding: 3.4375rem 0 5.687rem;
+  @include mq(lg) {
+    padding: 3.4375rem 4.375rem 5.687rem;
+  }
+}
+
+.blog__title {
+  margin-bottom: 4rem;
+  line-height: 1.4375;
+  @include mq(lg) {
+    margin-bottom: 4.1875rem;
+  }
+}
+
+.blog__wrapper {
+  @include mq(md) {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  @include mq(lg) {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/*===============================================================================================
+# item
+==============================================================================================*/
+.blog__items {
+  @include mq(md) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    // gap: 1.875rem;
+  }
+}
+
+.blog__item {
+  @include mq(md) {
+    width: 31.811%;
+  }
+  @include mq(lg) {
+  
+  }
+}
+.blog__item:nth-child(n + 4) {
+  @include mq(md) {
+    margin-top: 1.875rem;
+  }
+}
+
+.blog__item__link {
+  color: $color-font-1;
+}
+
+.blog__item:nth-child(n + 1) {
+  @include mq(md) {
+    margin-bottom: 0;
+  }
+  @include mq(xs) {
+    margin-bottom: 2rem;
+  }
+}
+
+/*===============================================================================================
+# image
+==============================================================================================*/
+
+.blog__item__image {
+  aspect-ratio: 389/260;
+  // width: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/*===============================================================================================
+# body
+==============================================================================================*/
+.blog__item__body {
+  box-shadow: 0px 3px 6px #00000029;
+  background: $color-bg-2;
+  font-weight: bold;
+  padding: 0.875rem 1.937rem 1.125rem 1rem;
+  position: relative;
+  height: 7.9375rem;
+  @include mq(md) {
+  }
+}
+.blog__item__text {
+  line-height: 1.444;
+  font-size: 0.875rem;
+  @include mq(lg) {
+    font-size: 1.125rem;
+  }
+}
+
+.blog__item__text-1 {
+  margin-bottom: 3.3125rem;
+  @include mq(lg) {
+  }
+}
+.blog__item__text-2 {
+  margin-bottom: 0.062rem;
+  @include mq(lg) {
+  }
+}
+
+.blog__item__text-3 {
+  margin-bottom: 1.625rem;
+  @include mq(lg) {
+  }
+}
+
+.blog__item__time {
+  position: absolute;
+  line-height: 1.444;
+  text-align: right;
+  bottom: 10px;
+  right: 32px;
+  @include mq(lg) {
+  }
+}

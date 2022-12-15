@@ -1,0 +1,132 @@
+// * {
+//   // outline: 1px solid magenta;
+// }
+
+/*===============================================================================================
+# font
+==============================================================================================*/
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+$base-font: "Noto Sans JP", sans-serif;
+
+/*===============================================================================================
+# color
+==============================================================================================*/
+$color-bg-1: #eefbfb;
+$color-bg-2: #ffffff;
+$color-bg-3: #F2F2F2;
+$color-bg-4: #333333;
+$color-bg-5: #3ba6c9;
+
+
+$color-font-1: #333333;
+$color-font-2: #ffffff;
+
+/*===============================================================================================
+# メディアクエリ
+==============================================================================================*/
+$sizes: xl, lg, md, xs;
+
+//ブレイクポイント
+$breakpoint: (
+  "xs": "screen and (min-width: 375px)",
+  "md": "screen and (min-width: 768px)",
+  "lg": "screen and (min-width: 1000px)",
+  "xl": "screen and (min-width: 1600px)",
+) !default;
+
+@mixin mq($size: md) {
+  @media #{ map-get( $breakpoint, $size ) } {
+    @content;
+  }
+}
+
+/*===============================================================================================
+# 共通プロパティ
+==============================================================================================*/
+html {
+  font-size: 100%;
+}
+
+body {
+  $base-font: "Noto Sans JP", sans-serif;
+  box-sizing: border-box;
+  // color: $color-font-1;
+  // background-color: chartreuse;
+  // @include mq(xs) {
+  //   background-color: blanchedalmond;//375〜767のスタイル
+  // }
+  // @include mq(md) {
+  //  background-color: azure;//768〜1279のスタイル
+  // }
+  // @include mq(lg) {
+  // background-color: thistle;//1000〜のスタイル
+  // }
+  // @include mq(xl) {
+  //  background-color: beige;
+  // }
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.wrapper {
+  max-width: 1227px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*===============================================================================================
+# コンポーネント ※セクションタイトル
+==============================================================================================*/
+.section__title {
+  text-align: center;
+  .jp {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.625rem;
+    line-height: 1.4375;
+    @include mq(md) {
+      font-size: 2rem;
+    }
+  }
+  .en {
+    font-size: 1rem;
+    color: $color-font-2;
+    font-weight: bold;
+    line-height: 1.5;
+    @include mq(lg) {
+      font-size: 1rem;
+    
+    }
+  }
+}
+
+/*===============================================================================================
+# コンポーネント ※お問い合わせボタン
+==============================================================================================*/
+.link {
+  @include mq(md) {
+    a {
+      display: inline-block;
+      color: $color-font-2;
+      font-size: 0.875rem;
+      background: linear-gradient(to right, #fa41cc, #6020b0);
+      line-height: 1.428;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px;
+      padding: 7px 36px 10px 35px;
+    }
+  }
+}
+
+/*===============================================================================================
+# コンポーネント ※カード (works blog)
+==============================================================================================*/
